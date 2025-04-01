@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+    <h1>Teste</h1>
+    <script>
+    function calculadora(a, b) {
+        return a + b;
+    }
+    let resultado = calculadora(5, 3);
+    if (resultado > 0) {
+        console.log("Resultado é positivo: " + resultado);
+    } else {
+        console.log("Resultado é negativo: " + resultado);
+    }
+
+    let pessoas = ["Nathan", "Lucas", "João", "Pedro", "Ana"];
+    console.log(pessoas);
+    console.log(pessoas[0]);
+    console.log(pessoas.length);
+
+    pessoas.push("Maria");
+    console.log(pessoas.length);
+    console.log(pessoas);
+
+    pessoas.splice(1, 1);
+    console.log(pessoas.length);
+    console.log(pessoas);
+
+    pessoas.pop();
+    console.log(pessoas.length);
+    console.log(pessoas);
+
+    for(let posicao = 0; posicao < pessoas.length; posicao++) {
+        if (pessoas[posicao] == "Nathan") {
+            console.log("Nathan foi encontrado na posição: " + posicao);
+        } else {
+            console.log("Nathan não foi encontrado na posição: " + posicao);
+        }
+        console.log('nome do caba era ${pessoas[posicao]}');
+    };
+    </script>
+</body>
+</html>
